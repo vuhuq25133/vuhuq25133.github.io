@@ -1,0 +1,13 @@
+{
+  "name": "tailwind-practice",
+  "version": "1.0.0",
+  "description": "Tailwind CSS Practice Project",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

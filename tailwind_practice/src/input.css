@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Timeline central line for screen widths larger than mobile */
+@media (min-width: 768px) {
+  .timeline-line::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #e9ecef;
+    z-index: 0;
+  }
+}
+
+/* Mobile timeline left line */
+@media (max-width: 767px) {
+  .timeline-line::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #e9ecef;
+    z-index: 0;
+  }
+}
