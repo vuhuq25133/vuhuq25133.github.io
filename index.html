@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Frontend Practice Hub | vuhuq25133</title>
+    <title>Bài tập HTML CSS</title>
     <meta name="description" content="Nơi lưu trữ các dự án học tập và thực hành Frontend của Vũ Huy Quốc.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,6 @@
             position: relative;
         }
 
-        /* Abstract Background Glows */
         .glow {
             position: absolute;
             width: 400px;
@@ -62,7 +61,7 @@
             right: -10%;
         }
 
-        /* Header Styles */
+        /* Header */
         header {
             max-width: 1200px;
             width: 100%;
@@ -100,7 +99,7 @@
             line-height: 1.6;
         }
 
-        /* Main Workspace */
+        /* Main */
         main {
             max-width: 1200px;
             width: 100%;
@@ -119,7 +118,6 @@
             width: 100%;
         }
 
-        /* Glassmorphism Card */
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -230,27 +228,7 @@
             transform: translateX(6px);
         }
 
-        /* Footer */
-        footer {
-            padding: 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            background: rgba(11, 15, 25, 0.8);
-            font-size: 0.85rem;
-            color: #6b7280;
-        }
-
-        footer a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #ffffff;
-        }
-
-        /* Responsive Design */
+        /* Responsive */
         @media (max-width: 640px) {
             header {
                 padding: 2rem 1rem;
@@ -275,12 +253,11 @@
 
     <header>
         <div class="logo">vuhuq25133.github.io</div>
-        <h1 class="hero-title">Frontend Practice Hub</h1>
+        <h1 class="hero-title">Bài tập HTML CSS</h1>
     </header>
 
     <main>
         <div class="grid">
-            <!-- Practice Card -->
             <a href="./practice/" class="card card-1" id="link-practice">
                 <div class="card-content">
                     <span class="badge">Vanilla CSS</span>
@@ -290,8 +267,6 @@
                     Xem dự án <span class="arrow">→</span>
                 </div>
             </a>
-
-            <!-- Tailwind Practice Card -->
             <a href="./tailwind_practice/" class="card card-2" id="link-tailwind">
                 <div class="card-content">
                     <span class="badge">Tailwind CSS</span>
