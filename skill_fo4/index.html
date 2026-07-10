@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FC Online Skills Guide - Tra Cứu Kỹ Thuật Bàn Phím & Tay Cầm</title>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome for search icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Responsive Header -->
+  <header class="app-header">
+    <div class="header-title-container">
+      <div>
+        <h1 class="app-title">FC Online Skills</h1>
+        <span class="app-subtitle">Cẩm nang tra cứu kỹ thuật</span>
+      </div>
+      <div>
+        <!-- Visual Accent Ornament -->
+        <span class="app-subtitle" style="color: var(--neon-cyan)">V1.0 Gameplay</span>
+      </div>
+    </div>
+    
+    <!-- Horizontal Scrollable Navbar -->
+    <nav class="navbar-categories" id="navbar-categories">
+      <!-- Generated dynamically by app.js -->
+      <button class="nav-tab active">1★</button>
+      <button class="nav-tab">2★</button>
+      <button class="nav-tab">3★</button>
+      <button class="nav-tab">4★</button>
+      <button class="nav-tab">5★</button>
+      <button class="nav-tab">6★</button>
+      <button class="nav-tab">Tâng Bóng 3★</button>
+      <button class="nav-tab">Tâng Bóng 4★</button>
+      <button class="nav-tab">Tâng Bóng 5★+</button>
+    </nav>
+  </header>
+
+  <!-- Main Content Grid -->
+  <main class="app-container">
+    
+    <!-- Left Sidebar: Search & List -->
+    <aside class="sidebar">
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="skill-search" class="search-input" placeholder="Tìm tên kỹ thuật hoặc số sao...">
+      </div>
+      <div class="skills-list" id="skills-sidebar">
+        <!-- List items generated dynamically by app.js -->
+      </div>
+    </aside>
+
+    <!-- Sidebar Resizer Handle -->
+    <div class="sidebar-resizer" id="sidebar-resizer"></div>
+
+    <!-- Right Main View: Details -->
+    <section class="detail-view">
+      <div class="detail-panel fade-in">
+        
+        <!-- Skill Title & Badge -->
+        <div class="detail-header">
+          <h2 class="detail-title" id="detail-skill-name">Chọn kỹ thuật để xem</h2>
+          <span class="detail-badge" id="detail-skill-category">-</span>
+        </div>
+
+        <!-- Visual Side-by-Side Neon Cards -->
+        <div class="input-grid">
+          
+          <!-- Keyboard Container (Left) -->
+          <div class="input-card card-keyboard">
+            <div class="card-title-container">
+              <span class="card-icon" style="color: var(--neon-cyan)"><i class="fa-solid fa-keyboard"></i></span>
+              <h3 class="card-title">Thao tác Bàn Phím</h3>
+            </div>
+            <div class="instruction-display" id="detail-keyboard-container">
+              <!-- Keys generated dynamically -->
+            </div>
+          </div>
+
+          <!-- Controller Container (Right) -->
+          <div class="input-card card-controller">
+            <div class="card-title-container">
+              <span class="card-icon" style="color: var(--neon-purple)"><i class="fa-solid fa-gamepad"></i></span>
+              <h3 class="card-title">Thao tác Tay Cầm</h3>
+            </div>
+            <div class="instruction-display" id="detail-controller-container">
+              <!-- Gamepad buttons generated dynamically -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Logic implementation -->
+  <script src="app.js"></script>
+</body>
+</html>
