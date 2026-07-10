@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.name-display {
+  border: 1px solid #777;
+  padding: 15px;
+  width: fit-content;
+  min-width: 200px;
+}
+
+#name-paragraph {
+  color: #a020f0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
