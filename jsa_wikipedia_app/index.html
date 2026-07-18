@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search App</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- SEARCH VIEW -->
+        <div id="searchView" class="view-container">
+            <header class="search-header">
+                <h1 class="app-title">Wikipedia Search</h1>
+                <form id="searchForm" class="search-form" autocomplete="off">
+                    <div class="search-input-container">
+                        <input type="text" id="searchInput" placeholder="Search Wikipedia..." required minlength="3">
+                        <div id="suggestionBox" class="suggestion-box hidden"></div>
+                    </div>
+                    <button type="submit" id="searchBtn" class="btn btn-primary">Search</button>
+                </form>
+            </header>
+
+            <main class="results-container">
+                <h2 id="resultsTitle" class="results-title hidden">Search Results</h2>
+                <div id="resultsGrid" class="results-grid"></div>
+            </main>
+        </div>
+
+        <!-- DETAIL VIEW -->
+        <div id="detailView" class="view-container hidden">
+            <header class="detail-header">
+                <button id="backBtn" class="btn btn-secondary">&lt; Back to results</button>
+            </header>
+            <main id="articleContent" class="article-content"></main>
+        </div>
+
+        <!-- Loading spinner & Error display -->
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <span>Loading...</span>
+        </div>
+        <div id="errorMessage" class="error-message hidden"></div>
+    </div>
+
+    <!-- Application script -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
